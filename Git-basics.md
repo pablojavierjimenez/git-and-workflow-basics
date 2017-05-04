@@ -34,26 +34,40 @@ index
   Fetches the files from the remote repository and merges it with your local one. This command is equal to the git fetch and the git merge sequence. Example: git pull origin
 #### git commit -a :
   Takes all of the changes written in the index, creates a new commit object pointing to it and sets the branch to point to that new commit. Examples: git commit -m ‘committing added changes’
-  ```
+  ```bash
     git commit -a -m "committing all changes, equals to git add and git commit"
   ```
 #### git add (-u) :
   Adds files changes in your working directory to your index.
-  you can add a single file, a folder or allExample:
-  ```
+  you can add a single file, a folder or all Example:
+  ```bash
   git add rootPath/fileFolder/subfolder/index.js
+  
   git add rootPath/fileFolder/subfolder/*.js
+
   git add rootPath/fileFolder/*
+
   git add .
   ```
 #### git push :
   Pushes all the modified local objects commited in your local repository to the remote repository and advances its branches. Example:
-  ```
-    git push origin currentWorkingBranch
+  ```bash
+  git push origin currentWorkingBranch
   ```
 #### git diff :
   Compare your lost file changes in your working directory, with the last changes added to stage
-  Generates patch files or statistics of differences between paths or files in your git repository, or your index or your working directory. Example: git diff
+  Generates patch files or statistics of differences between paths or files in your git repository, or your index or your working directory. 
+  you can run `git diff` beetwen files, branches, or commits. Example:
+  ```bash
+  git diff
+
+  git diff index.html
+
+  git diff feature/brancheId-1 feature/brancheId-1
+  
+  git diff feature/brancheId-1 feature/brancheId-1
+  
+  ```
 #### git diff head :
 
 ![alt text](./img/git-comand-flow-schema.png "git comand flow schema")

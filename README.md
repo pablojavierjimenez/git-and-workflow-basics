@@ -1,1 +1,1 @@
-# git-and-workflow-basics
+# git-and-workflow-basic
