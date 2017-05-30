@@ -64,7 +64,7 @@ index
 
   git add .
   ```
-#### git commit -a :
+#### git commit (-a) :
   Takes all of the changes written in the index, creates a new commit object pointing to it and sets the branch to point to that new commit. Examples: git commit -m ‘committing added changes’.  
   Example:
   ```bash
@@ -95,7 +95,22 @@ index
   ```bash
     git diff head
   ```
+#### git reset :
+  _git reset_ remove your lost changes added to stage, but kipping your changes. _git reset --hard_ reset your index and working directory to the state of your last commit. _git reset --hard HEAD_ reset your index and working directory to the state of your last commit
+  Example:
+  ```bash
+    git reset
+
+    git reset --hard 
+    
+    git reset --hard head
+  ```
+
 ![alt text](./img/git-comand-flow-schema.png "git comand flow schema")
+
+----
+
+![alt text](./img/git-flow-workflow.png "git flow workflow.")
 
 ----
 
